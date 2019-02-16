@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 500px;
+  border: 1px solid lightgray;
+}
+
+.messageInput {
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+.messageContainer {
+  width: 100%;
+  margin: 0px 5px;
+}
+
+input {
+  height: 24px;
+  width: 240px;
+}
+
+button {
+  margin-left: 5px;
+  height: 30px;
+  width: 120px;
+  font-size: large;
+}
+
+p {
+  font-size: medium;
+  background-color: lightgray;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  margin: 7px;
+}
+
+.ownMessage {
+  background-color: lightblue;
+  align-self: flex-end;
+}
