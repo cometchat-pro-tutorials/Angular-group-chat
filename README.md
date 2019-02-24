@@ -1,8 +1,9 @@
 # Angular Chat App Example
 
-This example shows how to build an anonymous group chat with Angular. 
+This example shows how to build an anonymous group chat with Angular:
 
-SCREENSHOTS
+![Login](/screenshots/Login.png?raw=true)
+![Chat](/screenshots/Chat.png?raw=true)
 
 Jump straight into the code or read the accompanying step-by-step guide here on our blog.
 
@@ -16,6 +17,7 @@ This demo uses:
 ## Running the demo locally
 * Download the repository [here](https://github.com/cometchat-pro/javascript-reactjs-chat-app.git) or by running `git clone https://github.com/cometchat-pro/javascript-reactjs-chat-app.git`
 * Install all dependencies by running `npm install` in the project folder
+* Go to `src/environments/environment.ts` file and fill in a valid api key and application key
 * Start the application by running `npm start` in the aplication folder
 * Go to http://localhost:4200
 
