@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CometChatService } from 'src/app/services/comet-chat.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-group-view',
@@ -7,8 +8,6 @@ import { CometChatService } from 'src/app/services/comet-chat.service';
   styleUrls: ['./group-view.component.scss']
 })
 export class GroupViewComponent implements OnInit {
-  private groupId = 'supergroup';
-
   messages = [];
 
   get currentUser() {
@@ -26,12 +25,12 @@ export class GroupViewComponent implements OnInit {
   }
 
   sendMessage(message: string) {
-    this.chatService.sendMessage(this.groupId, message);
+    this.chatService.sendMessage(environment.cometChat.groupId, message);
   }
 
   getMessages() {
     this.chatService
-      .getPreviousMessages(this.groupId)
+      .getPreviousMessages(environment.cometChat.groupId)
       .then(messages => (this.messages = messages))
       .then(console.log);
   }

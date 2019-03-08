@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   cometChat: {
     apiKey: 'API_KEY_HERE',
-    appId: 'APP_ID_HERE'
+    appId: 'APP_ID_HERE',
+    groupId: 'supergroup'
   }
 };
 

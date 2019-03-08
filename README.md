@@ -20,6 +20,7 @@ This demo uses:
 * Go to `src/environments/environment.ts` file and fill in a valid api key and application key
 * Start the application by running `npm start` in the aplication folder
 * Go to http://localhost:4200
+* By default it uses the 'supergroup' that is already created in the ComeChat account. If you want to use a different one go to `src/environments/environment.ts` and change the value of the groupId property.
 
 ## Useful links 
 
