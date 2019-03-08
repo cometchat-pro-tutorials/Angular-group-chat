@@ -7,14 +7,14 @@
 .messages {
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  max-height: 500px;
+  overflow: scroll;
+  height: 400px;
   border: 1px solid lightgray;
 }
 
 .messageInput {
   margin-top: 15px;
-  align-self: flex-end;
+  display: flex;
 }
 
 .messageContainer {
@@ -24,7 +24,7 @@
 
 input {
   height: 24px;
-  width: 240px;
+  width: 100%;
 }
 
 button {
@@ -46,4 +46,8 @@ p {
 .ownMessage {
   background-color: lightblue;
   align-self: flex-end;
+}
+
+i {
+  color: chocolate;
 }

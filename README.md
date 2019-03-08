@@ -15,9 +15,9 @@ This demo uses:
 * CometChat JavaScript SDK
 
 ## Running the demo locally
-* Download the repository [here](https://github.com/cometchat-pro/javascript-reactjs-chat-app.git) or by running `git clone https://github.com/cometchat-pro/javascript-reactjs-chat-app.git`
+* Download the repository [here](https://github.com/adrianfaciu/CometChat.git) or by running `git clone https://github.com/adrianfaciu/CometChat.git`
 * Install all dependencies by running `npm install` in the project folder
-* Go to `src/environments/environment.ts` file and fill in a valid api key and application key
+* Go to `src/environments/environment.ts` file and fill in a valid api key (authOnly scope is enough) and application key
 * Start the application by running `npm start` in the aplication folder
 * Go to http://localhost:4200
 * By default it uses the 'supergroup' that is already created in the ComeChat account. If you want to use a different one go to `src/environments/environment.ts` and change the value of the groupId property.
@@ -30,4 +30,4 @@ This demo uses:
 
 ## Other examples
 
-* [Complete app](https://github.com/cometchat-pro/javascript-reactjs-chat-app)
+* [Complete app](https://github.com/adrianfaciu/CometChat.git)

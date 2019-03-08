@@ -4,7 +4,7 @@
       *ngFor="let message of messages"
       [ngClass]="{ ownMessage: message.sender.uid === currentUser.uid }"
     >
-      {{ message.text }}
+      <i>{{ message.sender.uid }}</i> <br/> {{ message.text }}
     </p>
   </div>
 

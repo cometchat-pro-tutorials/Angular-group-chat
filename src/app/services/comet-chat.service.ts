@@ -19,10 +19,9 @@ export class CometChatService {
   }
 
   login(userId: string, apiKey: string = environment.cometChat.apiKey) {
-    return CometChat.login(userId, apiKey).then(
-      usr => (this.currentUser = usr),
-      (this.currentUser = null)
-    );
+    return CometChat.login(userId, apiKey)
+      .then(usr => (this.currentUser = usr), (this.currentUser = null))
+      .then(_ => console.log('User logged in'), console.error);
   }
 
   sendMessage(receiverId: string, text: string) {
@@ -46,13 +45,17 @@ export class CometChatService {
     );
   }
 
+  removeListener(listenerId: string) {
+    CometChat.removeMessageListener(listenerId);
+  }
+
   joinGroup(groupId: string) {
     return CometChat.joinGroup(groupId, CometChat.GROUP_TYPE.PUBLIC, '');
   }
 
   getPreviousMessages(groupId: string) {
     const messageRequest = new CometChat.MessagesRequestBuilder()
-      .setUID(groupId)
+      .setGUID(groupId)
       .setLimit(100)
       .build();
 

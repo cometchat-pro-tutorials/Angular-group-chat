@@ -27,7 +27,7 @@ declare module '@cometchat-pro/chat' {
     }
 
     class MessagesRequestBuilder {
-      setUID(uid: string): MessagesRequestBuilder;
+      setGUID(guid: string): MessagesRequestBuilder;
       setLimit(limit: number): MessagesRequestBuilder;
       build(): MessageRequest;
     }
