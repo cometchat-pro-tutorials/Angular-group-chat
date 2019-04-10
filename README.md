@@ -4,6 +4,10 @@ This example shows how to build an anonymous group chat with Angular.
 
 SCREENSHOTS
 
+![Login](/screenshots/Login.png?raw=true)
+![Chat](/screenshots/Chat.png?raw=true)
+
+
 Jump straight into the code or read the accompanying step-by-step guide here on our blog.
 
 ## Technology
