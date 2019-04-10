@@ -15,7 +15,7 @@ This demo uses:
 * CometChat JavaScript SDK
 
 ## Running the demo locally
-* Download the repository [here](https://github.com/adrianfaciu/CometChat.git) or by running `git clone https://github.com/adrianfaciu/CometChat.git`
+* Download the repository [here](https://github.com/cometchat-pro-samples/Angular-group-chat.git) or by running `git clone https://github.com/cometchat-pro-samples/Angular-group-chat.git`
 * Install all dependencies by running `npm install` in the project folder
 * Go to `src/environments/environment.ts` file and fill in a valid api key (authOnly scope is enough) and application key
 * Start the application by running `npm start` in the aplication folder
@@ -30,4 +30,4 @@ This demo uses:
 
 ## Other examples
 
-* [Complete app](https://github.com/adrianfaciu/CometChat.git)
+* [Complete app](https://github.com/cometchat-pro-samples/Angular-group-chat.git)
