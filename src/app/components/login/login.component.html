@@ -1,0 +1,14 @@
+<div>
+  <h4>Login with one of the test users: superhero1, superhero2, superhero3, superhero4 or superhero5.</h4>
+  <label for="userName">Username</label>
+  <input id="userName"
+         type="text"
+         #userName
+         placeholder="superhero1"
+         (keydown.enter)="login(userName.value)"
+         />
+
+  <span *ngIf="hasError">Username does not exist!</span>
+
+  <button (click)="login(userName.value)">Join chat</button>
+</div>
